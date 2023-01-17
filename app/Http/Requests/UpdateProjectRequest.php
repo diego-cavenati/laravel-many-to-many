@@ -32,6 +32,7 @@ class UpdateProjectRequest extends FormRequest
             ],
             'cover_image' => ['nullable', 'image', 'max:300'],
             'type_id' => ['nullable', 'exists:types,id'],
+            'tecnologies' => ['exist:tecnologies,id'],
             'description' => ['nullable'],
             'vote' => ['nullable', 'max:3'],
             'link' => ['nullable', 'max:100'],

@@ -21,7 +21,7 @@ class TecnologySeeder extends Seeder
         foreach ($tecnologies as $tecnology) {
             $newTecnology = new Tecnology();
             $newTecnology->name = $tecnology;
-            $newTecnology->slug = Str::slug($tecnologies);
+            $newTecnology->slug = Str::slug($tecnology);
             $newTecnology->save();
         }
     }
